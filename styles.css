@@ -263,6 +263,43 @@ body::before{
   flex-wrap: wrap;
 }
 
+/* Hero image placeholder */
+.hero-image-wrap{
+  border-radius: var(--radius2);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, rgba(255,79,163,.10), rgba(124,92,255,.10));
+}
+
+.hero-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Product card images + stamp overlay */
+.card-media{
+  position: relative;
+  padding: 1rem;
+}
+
+.card-image{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 22px;
+  border: 1px solid rgba(32,24,36,.10);
+}
+
+/* Make the stamp sit on top of the image */
+.card-media .stamp{
+  position: absolute;
+  top: 1.35rem;
+  left: 1.35rem;
+}
+
+
 /* --------- Buttons / Badges / Tags --------- */
 .btn{
   display: inline-flex;
